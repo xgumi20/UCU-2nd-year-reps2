@@ -1,6 +1,6 @@
 # UCU-2nd-year-reps2
 
-mobile dev project # BMI
+mobile dev project BMI
 
 apk is attached for test purpose
 
