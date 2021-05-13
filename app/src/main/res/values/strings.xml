@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="centimeters">centimeters</string>
+    <string name="kilogram">kilogram</string>
+
+    <string-array name="planets_array">
+        <item>Centimeter</item>
+        <item>Meter</item>
+        <item>Earth</item>
+    </string-array>
+</resources>

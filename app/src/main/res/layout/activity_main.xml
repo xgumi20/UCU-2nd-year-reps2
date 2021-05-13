@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/res"
+            android:layout_width="135dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:hint="BMI Result"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/total_res"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/cent"
+            android:layout_width="138dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="144dp"
+            android:autofillHints="true"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="centimeters"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/kilo"
+            app:layout_constraintHorizontal_bias="0.102"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="HardcodedText,LabelFor" />
+
+        <Button
+            android:id="@+id/calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="compute bmi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/res"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/total_res"
+            android:layout_width="136dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="216dp"
+            android:gravity="center_horizontal"
+            android:hint="BMI total"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:text="Weight (kg)"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/kilo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/kilo"
+            android:layout_width="151dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="144dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:autofillHints="true"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="kilograms"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="HardcodedText,LabelFor,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="323dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:text="Body Mass Index Calculator"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="250dp"
+            android:layout_height="47dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+            <RadioButton
+                android:id="@+id/centimeters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Centimeters"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/meters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Meters"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvheight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="121dp"
+            android:layout_marginBottom="4dp"
+            android:text="Height (cm)"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/cent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="HardcodedText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
